@@ -1,0 +1,51 @@
+//My_Second_test_programm_N1_2023
+// Massive array[][] and time(NULL) from directive <ctime>!
+/*And random numbers from pascal or (Delphi7) randomize))))) */
+//
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+	
+	int const size1 = 10, size2 = 10;
+
+	int arr1[size1][size2];
+	
+  cout << "And result:" << endl;
+	for (int i1 = 0;i1 < size1;++i1)
+	{
+		for(int i2=0;i2<size2;++i2)
+		arr1[i1][i2] = rand() % 90+10;
+	}
+	for (int i1 = 0; i1 < size1;++i1)
+	{
+		
+		for (int i2 = 0;i2 < size2;++i2)
+		cout << arr1[i1][i2];
+		cout << endl;
+	}
+
+cout << "Speaker (- \a";
+	return 0;
+}
+
+
+/*************************************************************
+And result:
+77743068963369192077
+31756393563876877387
+78378898559184879528
+62725444935029625991
+39426655367445646218
+14409754905297374092
+55542799502012697223
+60635678704452159866
+76645873184978167670
+60317677822687464721
+Speaker (-
+*************************************************************/
