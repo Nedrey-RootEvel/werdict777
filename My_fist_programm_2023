@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL, "Ru");
+int a , b , c , sum , mult ;
+double sred ;
+
+cout << "Vedite 3 chisla:" << endl ;
+cin >> a >> b >> c ;
+
+sum = a + b + c ;
+cout << " Summa 3chisel  = " << sum << endl ;
+cout << " Summa 3chisel fomula = " << a + b + c << endl ;
+
+mult = a * b * c ;
+cout << " Proizvedenie 3chisel = " << mult << endl;
+cout << " Proizvedenie 3chisel fomula = " << a * b * c  << endl;
+
+sred = (double)(a + b + c) / 3; 
+cout << "Srednie arifmeticheskoe 3chisel = " << sred << endl;
+cout << "Srednie arifmeticheskoe 3chisel fomula = " << (double)(a + b + c) / 3 << endl;
+
+
+return 0;
+}
